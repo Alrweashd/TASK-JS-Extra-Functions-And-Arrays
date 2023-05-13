@@ -73,3 +73,17 @@ k.push(m.find((i)=>i=='r'));
 console.log(k);
 
 shows();
+
+function obj (name , age){
+    this.name = name;
+    this.age = age;
+}
+
+class obj1 {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+let newObj = new obj("Turki",25);
+let newObj1 = new obj1("Turki",25);
