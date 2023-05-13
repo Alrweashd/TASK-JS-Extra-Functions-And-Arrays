@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Simple Website</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+      }
+
+      #heading {
+        background: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      #content {
+        margin: 20px 0;
+        padding: 20px;
+        background: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="heading">
+        <h1>My Simple Website</h1>
+      </div>
+
+      <div id="content">
+        <p id="text">Welcome to my website!</p>
+        <button id="changeTextButton">Change text</button>
+        <p>Click on any item to increase the moves.</p>
+        <ul class="deck">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+          <li>Item 5</li>
+          <li>Item 6</li>
+        </ul>
+        <p id="numMoves"></p>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("changeTextButton")
+        .addEventListener("click", function () {
+          document.getElementById("text").innerText =
+            "You clicked the button, and the text has changed!";
+        });
+    </script>
+  </body>
+</html>
