@@ -67,23 +67,55 @@ const completedTodoIterator = (todo) => {
 completedTodoIterator(`Get Dry cleaning`);
 
 let k = ["a", "b", "c"];
-let m = ['z','b','e']
-k = [...k, m.find((i)=>i=='r')];
-k.push(m.find((i)=>i=='r'));
+let m = ["z", "b", "e"];
+k = [...k, m.find((i) => i == "r")];
+k.push(m.find((i) => i == "r"));
 console.log(k);
 
 shows();
 
-function obj (name , age){
-    this.name = name;
-    this.age = age;
+function obj(name, age) {
+  this.name = name;
+  this.age = age;
 }
 
 class obj1 {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-    }
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
 }
-let newObj = new obj("Turki",25);
-let newObj1 = new obj1("Turki",25);
+let newObj = new obj("Turki", 25);
+let newObj1 = new obj1("Turki", 25);
+
+///////
+const funcay = (name) => `${name} is a JS ADDIct`;
+//forEach
+const earray = ["Omar", "Ali", "Yousf"];
+array.forEach((member) => console.log(funcay(member)));
+//filter
+const newArray = earray.filter((i) => i != "Ali");
+console.log(newArray);
+
+//map
+const newArrayM = earray.map((i) => {
+  if (i <= 4) {
+    return i + " big";
+  } else {
+    return i + "small";
+  }
+});
+console.log(newArrayM);
+
+//find
+console.log("a".length);
+
+function highAndLow(numbers) {
+  let array = [];
+  numbers = numbers.split(" ");
+  // ...
+
+  let x = numbers.filter((i, j) => isNaN(i[j])).filter((i) => i);
+  console.log(x);
+}
+highAndLow("1 2 3 4 5");

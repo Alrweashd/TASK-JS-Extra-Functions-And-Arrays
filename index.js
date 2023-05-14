@@ -7,9 +7,7 @@ const shows = (initailise) => {
     currentTodos = ["Get Dry cleaning", "Review functions", "Review arrays"];
     doneTodos = ["Finish all coded tasks", "Sent important email"];
   }
-  console.log(
-    `Current todos: \n ${currentTodos} \nDone todos: \n ${doneTodos}\n`
-  );
+  console.log(`Current todos: \n Done todos: \n ${doneTodos}\n`);
 };
 shows(true);
 
@@ -59,3 +57,11 @@ const editTodo = (index, todoList, updatedTodo) => {
 };
 editTodo(1, currentTodos, "Go home");
 shows();
+
+const funcay = (name) => `${name} is a JS ADDIct`;
+
+const array = ["Omar", "Ali", "Yousf"];
+array.forEach((member) => console.log(funcay(member)));
+
+const newArray = array.filter((i) => i != "Ali");
+console.log(newArray);
