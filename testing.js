@@ -111,15 +111,16 @@ console.log(newArrayM);
 console.log("a".length);
 
 function highAndLow(numbers) {
-  let array = [];
-  numbers = numbers.split(" ");
+;
+  let numbers = numbers.split(" ");
   // ...
 
-  let x = numbers.filter((i, j) => isNaN(i[j])).filter((i) => i);
-  console.log(x);
+  let bigger = numbers.find((i) => Math.max(i));
+  console.log("nn",bigger);
 }
 
 let numbers = "1 2 3 4 5";
+console.log(numbers[0] + numbers[2])
 numbers = numbers.split(" ");
 console.log(numbers);
 
