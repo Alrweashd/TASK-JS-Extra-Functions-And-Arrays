@@ -118,4 +118,9 @@ function highAndLow(numbers) {
   let x = numbers.filter((i, j) => isNaN(i[j])).filter((i) => i);
   console.log(x);
 }
+
+let numbers = "1 2 3 4 5";
+numbers = numbers.split(" ");
+console.log(numbers);
+
 highAndLow("1 2 3 4 5");
