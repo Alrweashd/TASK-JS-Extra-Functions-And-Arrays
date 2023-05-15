@@ -111,17 +111,21 @@ console.log(newArrayM);
 console.log("a".length);
 
 function highAndLow(numbers) {
-;
-  let numbers = numbers.split(" ");
+  numbers = numbers.split(" ");
+  console.log(numbers);
   // ...
 
-  let bigger = numbers.find((i) => Math.max(i));
-  console.log("nn",bigger);
+  let bigger = Math.max.apply(Math, numbers);
+  let smallest = Math.min.apply(Math, numbers);
+  let v = `${bigger} ${smallest}`;
+  console.log("nn", bigger);
+  console.log("nn", bigger, smallest);
+  return v;
 }
 
-let numbers = "1 2 3 4 5";
-console.log(numbers[0] + numbers[2])
-numbers = numbers.split(" ");
-console.log(numbers);
+// let numbers = "1 2 3 4 5";
+// console.log(numbers[0] + numbers[2])
+// numbers = numbers.split(" ");
+// console.log(numbers);
 
-highAndLow("1 2 3 4 5");
+console.log(highAndLow("1 2 3 4 5"));
